@@ -12,7 +12,7 @@ class ReminderService {
   }
 
   async addReminder(title: string) {
-    const response = await this.http.post<Reminder>("/todos");
+    const response = await this.http.post<Reminder>("/todos", { title });
     return response.data;
   }
 
