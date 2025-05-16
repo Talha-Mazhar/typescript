@@ -9,7 +9,7 @@ function ReminderList({ items }: ReminderListProps) {
   return (
     <ul>
       {items.map((item) => (
-        <li>{item.title}</li>
+        <li key={item.id}>{item.title}</li>
       ))}
     </ul>
   );
