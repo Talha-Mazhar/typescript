@@ -16,8 +16,8 @@ class ReminderService {
     return response.data;
   }
 
-  async removeRemider(id: number) {
-    const response = await this.http.delete("/todos" + id);
+  async removeReminder(id: number) {
+    const response = await this.http.delete("/todos/" + id);
     return response.data;
   }
 }
